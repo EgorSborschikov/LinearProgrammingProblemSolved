@@ -1,0 +1,56 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="linear_programming_problems.windows_app.MainWindow"
+        Title="Решение задач линейного программирования">
+    <Grid>
+        <StackPanel 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Center" 
+                Orientation="Vertical"
+                Margin="20">
+            <TextBlock Text="Выберите способ решения задачи линейного программирования"
+                FontSize="20"
+                Margin="10"/>
+        </StackPanel>
+        <StackPanel 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Orientation="Vertical"
+            Margin="20">
+        	<Grid Margin="20">
+                <StackPanel>
+                    <Image Source="/assets/graphics_method.png"
+                        Width="200" Height="200" Stretch="Uniform"/>
+                    <CheckBox 
+                        Name="GraphicsMethod" 
+                        Content="Решение графическим методом" />
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <StackPanel>
+                    <Image Source="/assets/simplex_method.jpg"
+                        Width="200" Height="200" Stretch="Uniform"/>
+                    <CheckBox 
+                        Name="SimplexMethod"
+                        Content="Решение симплекс-методом" />
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <StackPanel 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center">
+                    <Button Name="NavigateToSolving"
+                        Click="NavigateToSolvingButton_Click"
+                        Width="400" Height="50"
+                        Content="Продолжить"
+                        Background="#528EFF"
+                        HorizontalContentAlignment="Center"
+                        VerticalContentAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+    	</StackPanel>
+    </Grid>
+</Window>
