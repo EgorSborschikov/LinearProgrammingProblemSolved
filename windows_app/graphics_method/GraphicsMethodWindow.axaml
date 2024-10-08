@@ -4,5 +4,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="linear_programming_problems.windows_app.graphics_method.GraphicsMethodWindow"
-        Title="Решение задачи линейного программирования графическим методом">
+        Title="Графический метод решение задач линейного программирования">
+    <Grid>
+        <StackPanel 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Center" 
+                Orientation="Vertical"
+                Margin="20">
+            <TextBlock Text="Постановка задачи. Введите необходимые данные для построения многоугольника решений"
+                FontSize="20"
+                Margin="10"/>
+        </StackPanel>
+        <StackPanel 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center" 
+            Orientation="Vertical"
+            Margin="20">
+            <Grid Margin="20">
+                <StackPanel
+                    Orientation="Horizontal">
+                    <TextBlock Text="Выберите количество переменных"/>
+                    <ComboBox 
+                        Name="ComboboxValues"
+                        Width="100" 
+                        Margin="5">
+                        <ComboBoxItem>1</ComboBoxItem>
+                        <ComboBoxItem>2</ComboBoxItem>
+                        <ComboBoxItem>3</ComboBoxItem>
+                        <ComboBoxItem>4</ComboBoxItem>
+                        <ComboBoxItem>5</ComboBoxItem>
+                        <ComboBoxItem>6</ComboBoxItem>
+                        <ComboBoxItem>7</ComboBoxItem>
+                        <ComboBoxItem>8</ComboBoxItem>
+                        <ComboBoxItem>9</ComboBoxItem>
+                        <ComboBoxItem>10</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text="Выберите количество ограничений"/>
+                    <ComboBox 
+                        Name="ComboboxRestrictions"
+                        Width="100" 
+                        Margin="5">
+                        <ComboBoxItem>1</ComboBoxItem>
+                        <ComboBoxItem>2</ComboBoxItem>
+                        <ComboBoxItem>3</ComboBoxItem>
+                        <ComboBoxItem>4</ComboBoxItem>
+                        <ComboBoxItem>5</ComboBoxItem>
+                        <ComboBoxItem>6</ComboBoxItem>
+                        <ComboBoxItem>7</ComboBoxItem>
+                        <ComboBoxItem>8</ComboBoxItem>
+                        <ComboBoxItem>9</ComboBoxItem>
+                        <ComboBoxItem>10</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <StackPanel>
+                    <ItemsControl x:Name="InputFields">
+                <!-- Items will be generated dynamically -->
+                </ItemsControl>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <StackPanel 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center">
+                    
+                </StackPanel>
+            </Grid>
+    	</StackPanel>
+    </Grid>
 </Window>

@@ -65,3 +65,4 @@
 /home/egor/Documents/avalonia/linear_programming_problems/obj/Debug/net8.0/linear_p.F1A1CFA9.Up2Date
 /home/egor/Documents/avalonia/linear_programming_problems/obj/Debug/net8.0/linear_programming_problems.genruntimeconfig.cache
 /home/egor/Documents/avalonia/linear_programming_problems/obj/Debug/net8.0/ref/linear_programming_problems.dll
+/home/egor/Documents/avalonia/linear_programming_problems/obj/Debug/net8.0/linear_programming_problems.sourcelink.json
